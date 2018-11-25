@@ -1,0 +1,350 @@
+body {
+    background-color: #a6eaff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align:center;
+    height: 100%;
+}
+
+#secondaryContainment{
+    width: 1461px;
+    height: 100%;
+    padding-right: 30%
+}
+
+.mainArea{
+    background-color: #fff9a6;
+    z-index: 0;
+    position: absolute;
+    margin: auto;
+    height: 85%;
+    min-height: 564px;
+    width: 70%;
+    min-width: 520px;
+    padding: 1%;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    float: left;
+}
+
+#mainVentArea{
+    background-color: #fff9a6;
+    z-index: 0;
+    position: absolute;
+    margin: auto;
+    height: 85%;
+    min-height: 564px;
+    width: 70%;
+    min-width: 520px;
+    padding: 1%;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    float: left;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+/*--------------------------------------------------------------Animation*/
+.send{
+    animation-name: sendComplaint;
+    animation-duration: 6000ms; 
+}
+
+#validationArea{ 
+    opacity: 0;
+    position: absolute;
+    height: 85%;
+    min-height: 564px;
+    width: 20%;
+    min-width: 100px;
+    max-width: 200px;
+    padding: 1%;
+    float: left;
+    left: 72.5%;
+    background-color: gray;
+    border-radius: 15px;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /*--------------------------------------------------------------Trasition*/
+    transition: 400ms;
+}
+
+video{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: solid 5px #8a7d51;
+    border-radius:15px; 
+}
+
+#drawing{
+    height: 100%;
+}
+
+#smileyFace{
+    width: 90%;
+    height: 65%;
+    border: solid 5px #8a7d51;
+    border-radius:15px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#spacer{
+    position: absolute;
+    height: 40px;
+}
+
+#complaintBox{
+    height: 70%;
+}
+
+#complainSmileyFaceTextbox{
+    width:86%;
+    border-radius:15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#complaint{
+    background-color:#fbf9d3; 
+    margin: auto;
+    border: solid 5px #8a7d51;
+    border-radius:15px;
+    width: 90%;
+    height: 95%;
+}
+
+#btn_vent{
+  position: inherit;
+  border: none;
+  width: 20%;
+  background-color: #fff9a6;
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /*--------------------------------------------------------------Trasition*/
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+#btn_vent:hover{
+    border: none;
+    background-color: #fffef5;
+    box-shadow: 0px 0px 16px 2px #fffef5;
+    /*--------------------------------------------------------------Transformation*/
+    transform: scale(1.1);
+}
+
+h3
+{
+ vertical-align: middle;
+ font-size: 1em;
+}
+
+h2
+{
+ vertical-align: middle;
+ font-size: 1.2em;
+ 
+}
+
+#heading{
+    background:#fff9a6;
+    text-align: left; 
+    border-radius: 15px;   
+}
+
+#menu{
+    float: left;
+}
+
+#logo{
+    position: sticky;
+    float: left;
+    margin-left: 1%;
+}
+
+.menuSymbol {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.dropbtn {
+    background-color:#fff9a6;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    /*--------------------------------------------------------------Trasition*/
+    transition-duration: 200ms;
+}
+
+/*--------------------------------------------------------------Transformation*/
+.dropbtn:hover{
+    transform: scale(1.1);
+}
+
+.dropdown {
+    position: relative; 
+    display: inline-block;
+    /*--------------------------------------------------------------Trasition*/
+    transition-duration: 200ms;
+}
+
+.dropdown-content {
+    visibility: hidden;
+    position: absolute;
+    top: 70px;
+    background-color: #fff9a6;
+    min-width: 160px;
+    z-index: 2; 
+    box-shadow: 6px 9px 7px -5px rgba(0,0,0,0.43);
+    /*--------------------------------------------------------------Trasition*/
+    transition-duration: 300ms; 
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ebe990;
+    /*--------------------------------------------------------------Trasition*/
+    transition-duration: 500ms;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    visibility: visible;
+    /*--------------------------------------------------------------Trasition*/
+    transition-duration: 500ms;
+}
+
+ul {
+    list-style-type: none;
+    width: 75%;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ebe990;
+    border-radius: 15px;
+    box-shadow: 0px 0px 18px -5px rgba(0,0,0,0.75);
+    
+}
+
+li {
+    float: left;
+    
+}
+
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #8a7d51;
+}
+
+
+.validatee
+{
+    visibility: visible;
+    position: sticky;
+    width: 60%;
+    z-index: 2;
+    padding: 5%;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    margin: auto;
+    margin-top: 33%;
+    margin-bottom: 33%;
+    background:#f1f1e5;
+    text-align: center; 
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 80%;
+    /*--------------------------------------------------------------Trasition*/
+    transition-duration: 300ms;
+    transition-property: unset;
+}
+
+.validatee1
+{
+    background:#fde1ed;
+    border-radius: 100%;
+}
+
+.validatee2
+{
+    background:#f1f1e5;
+    border-radius: 15px;
+}
+
+/*--------------------------------------------------------------JS/CSS Triggered Animation*/
+/*--------------------------------------------------------------Transformations*/
+@keyframes sendComplaint{
+    0%{
+        transform: rotateZ(0deg) rotateY(0deg);
+    }
+    4%{
+        transform: rotateZ(30deg) rotateX(-20deg) scale(.8);
+    }    
+    8%{
+        transform: rotateZ(-30deg) rotateX(-40deg) scale(.7);
+    }
+    12%{
+        transform: rotateZ(30deg) rotateX(-60deg) scale(.5);
+    }
+    16%{
+        transform: rotateZ(-30deg) rotateX(-50deg) scale(.2);
+        }
+    24%{
+        transform: translate(120px, 0px) rotateX(0deg) scale(.2);  
+    }    
+    30%{
+        transform: translate(2020px, 345px) skew(100deg)  scale(.1);
+    }
+    30.1%{
+        transform: translate(-2000px, -345px) scale(.1);
+    }
+    70%{
+        transform: translate(-2000px, -345px) scale(.1);
+    }
+    75%{
+        transform: translate(-1000px, -145px) scale(.3);
+    }
+
+}
+
+/*--------------------------------------------------------------CSS Triggered Transform*/
+.validatee:hover
+{
+    transform: scale(1.2);
+    background:#fffffc;
+    box-shadow: 0px 12px 20px 0px rgba(0,0,0,0.2);
+}
+
+/* .flip{
+    background-color: #d0f70c;
+    animation-name: flip;
+    animation-duration: 400ms;
+}
+
+@keyframes flip{
+    25%{
+        transform: rotate3d(45deg, 0deg, 30deg)
+    }
+
+} */
+
+.collasped{
+    visibility: collapse;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Complain.com - Ventilator</title>
+  <link rel="stylesheet" type="text/css" href="complain.css">
+  <script src="complain.js"></script>
+</head>
+
+<body>
+  <div id="secondaryContainment">
+    <div class="noRightBorder" id="mainVentArea" >
+      <div id="heading">
+        <div id="menu">
+          <div class="dropdown">
+            <button class="dropbtn">
+              <div class="menuSymbol"></div>
+              <div class="menuSymbol"></div>
+              <div class="menuSymbol"></div>
+            </button>
+            <div class="dropdown-content">
+                <a href="complain.html">Home</a>
+                <a href="complainVent.html">Ventilator</a>
+                <a href="complainSmileyFace.html">Upside Down Frown</a>
+                <a href="#">Link 3</a>
+            </div>
+          </div>
+        </div>
+        <div id="logo">
+          <h1>Complain.com</h1>
+        </div>
+      </div>
+
+      <div id="complaintBox">
+        <textarea rows="4" cols="50" id="complaint" placeholder="Just type what's troubling you here, we want to hear it!"></textarea>
+        <br>
+        <!--------------------------------------------------------------Events-->
+        <button id="btn_vent" onclick="validateUser()">
+          <h2 id="btn_vent_text">Vent</h2>
+        </button>
+      </div>
+    </div>
+
+    <div id="validationArea">
+      <div id="spacer0"></div>
+      <div class="collasped">
+        <!--------------------------------------------------------------Events-->
+        <h3 id="validater0" onclick="messageClicked('validater0')"></h3>
+      </div>
+      <div class="collasped">
+        <h3 id="validater1"></h3>
+      </div>
+      <div class="collasped">
+        <h3 id="validater2"></h3>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

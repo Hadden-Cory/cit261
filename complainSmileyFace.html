@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Complain.com</title>
+  <link rel="stylesheet" type="text/css" href="complain.css">
+  <script src="complain.js"></script>
+</head>
+
+<body>  
+    <div id="imageLoader"  >
+      <img id="threeDSmile" src="smiles/smile_1.png" alt="smile" height="50" width="50">
+      <img id="transparentSmile" src="smiles/smile_2.png" alt="smile" height="50" width="50">
+      <img id="sidewaysSmile" src="smiles/smile_3.png" alt="smile" height="50" width="50">
+      <img id="classicSmile" src="smiles/smile_4.png" alt="smile" height="50" width="50">
+      <img id="greenSmile" src="smiles/smile_5.png" alt="smile" height="50" width="50">
+      <img id="laughingSmile" src="smiles/smile_6.png" alt="smile" height="50" width="50">
+    </div>
+  <div id="secondaryContainment">
+    <div class="mainArea">
+      <div id="heading">
+        <div id="menu">
+          <div class="dropdown">
+            <button class="dropbtn">
+              <div class="menuSymbol"></div>
+              <div class="menuSymbol"></div>
+              <div class="menuSymbol"></div>
+            </button>
+            <div class="dropdown-content">
+                <a href="complain.html">Home</a>
+                <a href="complainVent.html">Ventilator</a>
+                <a href="complainSmileyFace.html">Upside Down Frown</a>
+                <a href="#">Link 3</a>
+            </div>
+          </div>
+        </div>
+        <div id="logo">
+          <h1>Complain.com</h1>
+        </div>
+      </div>
+      <div id="drawing">
+        <!---------------------------------------------------------------Canvas Tag-->
+        <canvas id="smileyFace" width="700" height="300"></canvas>
+        <ul>
+            <li><a class="active" onclick="smileyFaceDraw('classicSmile')" href="#smile1">Classic Smile</a></li>
+            <li><a class="active" onclick="smileyFaceDraw()" href="#smile1">3D Smile</a></li>
+            <li><a class="active" onclick="smileyFaceDraw()" href="#smile1">Empty Smile</a></li>
+            <li><a class="active" onclick="smileyFaceDraw()" href="#smile1">Sideways Smile</a></li>
+            <li><a class="active" onclick="smileyFaceDraw()" href="#smile1">Lauging Smile</a></li>
+            <li><a class="active" onclick="smileyFaceDraw()" href="#smile1">Green Smile</a></li>
+            <li><a class="active" onclick="cgiFace()" href="#smile1">CGI Smile</a></li>
+
+        </ul>
+            <br>
+            <!--------------------------------------------------------------Events-->
+        <button id="btn_vent" ontouchstart, onclick="canvasClear()">
+            <h2 id="btn_vent_text">Clear</h2>
+          </button>
+      </div>
+    </div>
+
+
+</body>
+
+</html>
